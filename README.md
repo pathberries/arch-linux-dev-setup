@@ -1,7 +1,6 @@
 # arch-linux-dev-setup
 Here is the quick dev setup every developer needs on their Arch Linux - Manjaro
-#### Change to root user
-``` $ su ```
+
 #### Update the system
 ``` $ sudo pacman -Syu ```
 #### Install Git
@@ -14,10 +13,13 @@ Here is the quick dev setup every developer needs on their Arch Linux - Manjaro
 #### Install NodeJs
 ``` $ pacman -S nodejs npm ``` <br />
 ``` $ node --version ```
+#### Install yay - AUR helper
+```
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+sudo makepkg -si
+```
 #### Install VSCode
-``` $ sudo pacman -S --needed git base-devel ``` <br />
-``` $ git clone https://aur.archlinux.org/visual-studio-code-bin.git ``` <br />
-``` $ cd visual-studio-code-bin ``` <br />
-``` $ makepkg -si ``` 
+``` yay -S visual-studio-code-bin ```
 #### Install Google Chrome
-```  ```
+``` yay -S google-chrome  ```
